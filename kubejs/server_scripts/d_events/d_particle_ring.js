@@ -18,6 +18,7 @@ PlayerEvents.tick(event => {
         player.getMainHandItem() == 'anvilcraft:cut_ember_metal_block' ||
         player.getMainHandItem() == 'anvilcraft:ember_metal_upgrade_smithing_template' ||
         player.getMainHandItem() == 'anvilcraft:ember_metal_nugget' ||
+        player.getHeadArmorItem() == 'anvilcraft:ember_anvil_hammer'||
         player.getMainHandItem() == 'anvilcraft:ember_metal_block';
     const isHoldingSword = 
         player.getLegsArmorItem().nbt?.tic_materials  ? player.getLegsArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false||
